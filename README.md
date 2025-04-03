@@ -3,8 +3,8 @@
 Contains 3 group assignments for the Parallel Systems course at NKUA. 
 
 ## Group Members
-- Marinaki Themis - sdi2100096
-- Ioannis Ksiros - sdi2200122
+- Marinaki Themis 
+- Ioannis Ksiros
 
 ## HW_1
 
