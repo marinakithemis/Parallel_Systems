@@ -2,10 +2,6 @@
 
 Contains 3 group assignments for the Parallel Systems course at NKUA. 
 
-## Group Members
-- Marinaki Themis 
-- Ioannis Ksiros
-
 ## HW_1
 
 ### Exercise 1.1
@@ -27,4 +23,19 @@ Since each thread updated a separate element of the array, synchronization was n
 In this exercise, we had to implement our own reader-writer locks using Pthreads. Our implementation used a data structure containing two condition variables—one for reader threads and one for writer threads—along with a mutex and counters to track the number of active and waiting readers and writers. The mutex ensured safe access to the shared data structure, and each thread had to acquire the appropriate lock before proceeding.
 
 We implemented two different approaches: one prioritizing reader threads and the other prioritizing writer threads. We then modified a given linked list program to use our custom locks instead of Pthreads' built-in reader-writer locks. Finally, we compared the performance of both approaches under different thread counts and operation distributions, analyzing how prioritizing readers or writers affected efficiency.
+
+## HW_2
+
+
+
+
+## HW_3
+
+
+
+
+
+## Group Members
+- Marinaki Themis 
+- Ioannis Ksiros
 
