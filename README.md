@@ -26,8 +26,32 @@ We implemented two different approaches: one prioritizing reader threads and the
 
 ## HW_2
 
+### Exercise 2.1
 
+In this exercise, the goal is to implement Conway’s Game of Life both sequentially and in parallel using OpenMP. The game runs on a 2D grid (NxN), where each cell is either "alive" or "dead," and its next state is determined by the state of its eight neighbors. The simulation evolves in discrete steps (generations), with all updates happening simultaneously.
 
+The program should accept the following input parameters:
+- the number of generations to simulate,
+- the size of the grid,
+- the execution mode (sequential or parallel), and
+- the number of threads to use.
+
+Additionally, we are asked to run the simulation for 1000 generations using different grid sizes (64x64, 1024x1024, 4096x4096) and varying numbers of threads, and then evaluate the performance.
+
+### Exercise 2.2
+
+This exercise focuses on solving an upper triangular linear system using backward substitution. Two versions of the algorithm are provided: one that traverses the system "row-wise" and one "column-wise." The tasks include:
+- Analyzing whether the outer and inner loops of each version can be parallelized using OpenMP.
+- Implementing both algorithms in sequential and parallel form.
+- Creating a program that initializes an upper triangular matrix A, a vector b (right-hand side), and solves the system using the chosen method.
+
+The program should accept as input:
+- the size n of the linear system,
+- whether to use the sequential or parallel version,
+- whether to use the row-wise or column-wise algorithm, and
+- the number of threads to use.
+
+Finally, the exercise involves evaluating the performance and scalability of both algorithms for large matrix sizes (e.g., n = 10000). Optionally, the impact of different OpenMP scheduling strategies (schedule(runtime)) should be tested to identify which schedule yields the best performance.
 
 ## HW_3
 
